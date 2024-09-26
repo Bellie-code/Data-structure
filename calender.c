@@ -35,7 +35,7 @@ void displayCalender(struct Day* calender){
       printf("Day:%s,Date:%d,Activity:%s\n",calender[i].dayName,calender[i].date,calender[i].activity);
    }
 }
-void readCalender(struct Day* calender){
+void freeCalender(struct Day* calender){
     for(int i=0;i<7;i++){
     free(calender[i].dayName);
     free(calender[i].activity);
